@@ -1,0 +1,23 @@
+.row {
+  display: flex;
+  box-sizing: border-box;
+}
+.col {
+  flex: 1;
+  padding:15px;
+}
+@media (max-width: 600px) {
+  .row.break {
+    display: block;
+    &.xs{
+      display: flex;
+    }
+  }
+}
+.row-thirds {
+  display: flex;
+  justify-content: space-between;
+}
+.row-thirds .col {
+  width: 32%;
+}

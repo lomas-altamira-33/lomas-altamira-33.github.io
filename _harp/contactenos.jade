@@ -1,0 +1,9 @@
+.caption
+section.container
+  .row: .col-md-6.offset-md-3: h3 CONTACTENOS
+  .row: .col-md-6.offset-md-3
+    form(method='POST', action='https://api.formbucket.com/f/buk_MYoNFjTiGMeX4f4uNLj9T6bQ')
+      input.form-control(type='text', name='name', placeholder='Your name' required)
+      input.form-control(type='email', name='email', placeholder='Your email' required)
+      textarea.form-control(name='message', placeholder='Your message')
+      button(type='submit') Send
