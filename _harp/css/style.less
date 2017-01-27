@@ -4,35 +4,54 @@ body{
   color: rgb(26,26,26);
   padding:0;
   text-align: left;
-  .banner{
-    width:100%;
-    background-image: url('../img/banner.jpg');
-    background-attachment: fixed;
-    background-color: rgb(26,26,26);
-    height:400px;
-    background-position: center center;
-    background-size: cover;
-    nav.header{
-      display:flex;
-      background-color: rgba(26,26,26,.85);
-      padding:20px 40px;
-      color:white;
-      z-index:2;
-      .brand{
-        flex-basis:300px;
-        .first{
-          font-size:36;
-        }
-        .second{
-          font-size: 12;
-        }
+  video#video-background {
+  /*  making the video fullscreen  */
+    // position: absolute;
+    // right: 0; 
+    // top: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    // height:400px;
+  }
+  nav.header{
+    display:flex;
+    background-color: rgba(26,26,26,.85);
+    padding:20px 40px;
+    color:white;
+    z-index:2;
+    .brand{
+      flex-basis:300px;
+      .first{
+        font-size:36;
       }
-      .title{
-        font-size:32px;
+      .second{
+        font-size: 12;
       }
     }
+    .title{
+      font-size:32px;
+    }
+  }
+  .banner{
+    z-index: -100;
+    position: absolute;
+    right: 0; 
+    left:0;
+    top: 0;
+    // width:100%;
+    // background-image: url('../img/banner.jpg');
+    // background-attachment: fixed;
+    // background-color: rgb(26,26,26);
+    height:400px;
+    // background-position: center center;
+    // background-size: cover;
+  }
+  .cover-background{
+    background-color: white;
   }
   .caption{
+    margin-top:400px;
     padding:20px;
     background-color: rgb(26,26,26);
     color:white;
