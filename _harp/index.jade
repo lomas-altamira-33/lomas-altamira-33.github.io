@@ -1,6 +1,6 @@
 .banner
-  video#video-background(autoplay='', loop='', muted='')
-    iframe(src='https://www.youtube.com/embed/A6XUVjK9W4o', frameborder='0', allowfullscreen='')
+  .video-wrapper
+    iframe#video-background(src="https://www.youtube.com/embed/96ezhxcOFsE?hd=1&amp;iv_load_policy=3&amp;loop=1&amp;rel=0&amp;showinfo=0&amp;autoplay=1&amp;controls=0" frameborder="0" allowfullscreen)
 .caption
   .container
     .row
@@ -16,22 +16,23 @@
     section.row
       .col-md-12: h3 LOMAS ALTAMIRA 33
       .col-lg-6
-        img(src="img/lobby.jpg")
+        img(src="img/aerial.jpg")
       .col-lg-6
         p Ubicada en uno de los más prestigiosos vecindarios de San Salvador, nuestra propiedad LOMAS ALTAMIRA 33 se encuentra lista para ser transformada en una residencial de lujo, un hotel de alto nivel, un prestigioso complejo de edificios médicos, oficinas corporativas o educacionales. 
         p A unos cuantos pasos del Blvd. Los Próceres y diseñado por un aclamado grupo de construcción multinacional, nuestro complejo de edificios excede los estándares de seguridad y calidad nacionales e internacionales.
     section.row
       .col-sm-12: h3 TRANQUILO
-      .col-md-6
-        img(src="img/neighborhood.jpg")
+      
       .col-md-6
         | Sus jardines, su diseño y construcción minimalista le permiten a este complejo de 4 edificios de 9,239 m2 reflejar el refinamiento y sofisticación propios de la histórica comunidad en la que ha sido construido. Sus futuros ocupantes se sentirán en calma, protegidos por la gran pared cubierta de hiedra y sus portones de metal ornamentado que separan este oasis de serenidad de la gran ciudad que los rodea.
         .contactus-button
           a.button(href="/contactenos") CONTACTENOS
+      .col-md-6
+        img(src="img/tranquilo.jpg")
     section.row
       .col-sm-12: h3 AMPLIO
       .col-md-6
-        img(src="img/neighborhood.jpg")
+        img(src="img/amplio.jpg")
       .col-md-6
         | Un escritorio de recepción de madera, pisos de piedra pulida e interminables ventanas enmarcadas con madera le dan a nuestro complejo de edificios un diseño artístico, sin olvidar la modernidad, en todas sus áreas públicas. Candelabros complementan el flujo de luz natural para crear un espacio de trabajo y entorno de vida refinado sin perder el ambiente acogedor.
         .contactus-button
@@ -39,36 +40,23 @@
     section.row
       .col-sm-12: h3 ELEGANTE
       .col-md-6
-        img(src="img/transportation.jpg")
-      .col-md-6
         p Además de sus tres niveles de 12 apartamentos estilo residencia con instalaciones de baños privados, nuestra propiedad cuenta con 12 oficinas. El garaje bajo techo posee un espacio hasta para mas de 75 vehículos y el área de carga está equipada para tráileres. (Transporte pesado)
         p Una cocina estilo restaurante completamente funcional y una sala de comedor lista para más de 200 comensales.
         .contactus-button
           a.button(href="/contactenos") CONTACTENOS
+      .col-md-6
+        img(src="img/elegante.jpg")
     section.row
       .col-sm-12: h3 FUNCIONAL
       .col-md-6
-        img(src="img/transportation.jpg")
+        img(src="img/funcional.jpg")
       .col-md-6
         p La innovación y la durabilidad se pueden apreciar en cada aspecto del diseño de los edificios. Agua caliente accionada por el sol, filtración ultravioleta del agua, generadores eléctricos de emergencia, cuartos fríos para refrigeración, televisión de circuito cerrado, y una torre de vigilancia son solo algunas de las comodidades que prueban que esta es una propiedad diseñada para brindar un estilo de vida moderno, sofisticado y práctico.
         .contactus-button
           a.button(href="/contactenos") CONTACTENOS    
-    section.row
-      .col-sm-12: h3 LO MEJOR DE EL SALVADOR A TU ALREDEDOR
-      .col-md-8
-        p Fundada como la capital del país en 1840, San Salvador es una ciudad globalizada donde la historia, la experiencia y las oportunidades convergen, por lo que es un lugar privilegiado para el crecimiento y el desarrollo.
-        p Es el hogar del Estadio más grande a nivel Nacional, el Estadio Cuscatlán, así como de algunos de los edificios más altos del país.
-        p San Salvador disfruta de la distinción de ser uno de los Centros financieros de Centroamérica, y es el centro cultural, político y educativo de El Salvador.
-        p Como el centro metropolitano, San Salvador, cuenta con un ingreso per cápita seis veces superior al promedio nacional. 
-        p Nuestra propiedad LOMAS ALTAMIRA 33 se encuentra en las cercanías de los vecindarios más renombrados de El Salvador. A unos pocos kilómetros en vehículo de la Zona Rosa, Multiplaza, Gran Via y a minutos de la zona industrial Plan de la Laguna y Merliot
-        p Con incontables museos y restaurantes, además del teatro más antiguo de Centroamérica, San Salvador es la ciudad donde el arte y la cultura convergen.
-        .contactus-button
-          a.button(href="/contactenos") CONTACTENOS   
-      .col-md-4
-        img(src="img/transportation.jpg")  
     .row
-      .col-sm-12: h3 ESPECIFICACIONES DE LA PROPIEDAD:
       .col-md-6
+        h3 ESPECIFICACIONES:
         ul
           li Área total del terreno: 7,684 m²
           li Área de Construcción: 9,239 m²
@@ -78,27 +66,58 @@
           li Parqueo bajo techo para más de 75 vehículos
         h3 GALERIA
         .gallery
-          a(href='img/gallery/area.jpg', data-lightbox='image-1', data-title='Vista Aerea')
-            img(a, alt='image')
-          a(href='img/gallery/edificio-c.jpg', data-lightbox='image-2', data-title='Edeficio C')
-            img(src='img/thumbs/edificio-c.jpg', alt='image')
-          a(href='img/gallery/lobby.jpg', data-lightbox='image-3', data-title='Lobby')
-            img(src='img/thumbs/lobby.jpg', alt='image')
-          a(href='img/gallery/pasillo-lobby.jpg', data-lightbox='image-4', data-title='Pasillo Lobby')
-            img(src='img/thumbs/pasillo-lobby.jpg', alt='image')
-          a(href='img/gallery/recepcion.jpg', data-lightbox='image-5', data-title='Recepción')
-            img(src='img/thumbs/recepcion.jpg', alt='image')
-          a(href='img/gallery/area.jpg', data-lightbox='image-1', data-title='Vista Aerea')
-            img(src='img/thumbs/area.jpg', alt='image')
-          a(href='img/gallery/edificio-c.jpg', data-lightbox='image-2', data-title='Edeficio C')
-            img(src='img/thumbs/edificio-c.jpg', alt='image')
-          a(href='img/gallery/lobby.jpg', data-lightbox='image-3', data-title='Lobby')
-            img(src='img/thumbs/lobby.jpg', alt='image')
-          a(href='img/gallery/pasillo-lobby.jpg', data-lightbox='image-4', data-title='Pasillo Lobby')
-            img(src='img/thumbs/pasillo-lobby.jpg', alt='image')
-          a(href='img/gallery/recepcion.jpg', data-lightbox='image-5', data-title='Recepción')
-            img(src='img/thumbs/recepcion.jpg', alt='image')
+          a(href='img/gallery/gallery-1.jpg', data-lightbox='image-1', data-title='Aerea')
+            img(src='img/gallery/gallery-1-thumb.jpg', alt='image')
+          a(href='img/gallery/gallery-2.jpg', data-lightbox='image-2', data-title='Aerea')
+            img(src='img/gallery/gallery-2-thumb.jpg', alt='image')
+          a(href='img/gallery/gallery-3.jpg', data-lightbox='image-3', data-title='Archivos')
+            img(src='img/gallery/gallery-3-thumb.jpg', alt='image')
+          a(href='img/gallery/gallery-4.jpg', data-lightbox='image-4', data-title='Vista de la azotea de noche')
+            img(src='img/gallery/gallery-4-thumb.jpg', alt='image')
+          a(href='img/gallery/gallery-5.jpg', data-lightbox='image-5', data-title='Edificio')
+            img(src='img/gallery/gallery-5-thumb.jpg', alt='image')
+          a(href='img/gallery/gallery-6.jpg', data-lightbox='image-6', data-title='Entrada')
+            img(src='img/gallery/gallery-6-thumb.jpg', alt='image')
+          a(href='img/gallery/gallery-7.jpg', data-lightbox='image-7', data-title='Pasillo')
+            img(src='img/gallery/gallery-7-thumb.jpg', alt='image')
+          a(href='img/gallery/gallery-8.jpg', data-lightbox='image-8', data-title='Cuarto estilo hospital')
+            img(src='img/gallery/gallery-8-thumb.jpg', alt='image')
+          a(href='img/gallery/gallery-9.jpg', data-lightbox='image-9', data-title='Cocina')
+            img(src='img/gallery/gallery-9-thumb.jpg', alt='image')
+          a(href='img/gallery/gallery-10.jpg', data-lightbox='image-10', data-title='Paneles solares')
+            img(src='img/gallery/gallery-10-thumb.jpg', alt='image')
+          a(href='img/gallery/gallery-11.jpg', data-lightbox='image-11', data-title='Vecindario')
+            img(src='img/gallery/gallery-11-thumb.jpg', alt='image')
+          a(href='img/gallery/gallery-12.jpg', data-lightbox='image-12', data-title='Porton')
+            img(src='img/gallery/gallery-12-thumb.jpg', alt='image')
+          a(href='img/gallery/gallery-13.jpg', data-lightbox='image-13', data-title='Auditorio')
+            img(src='img/gallery/gallery-13-thumb.jpg', alt='image')
+          a(href='img/gallery/gallery-14.jpg', data-lightbox='image-14', data-title='Patio')
+            img(src='img/gallery/gallery-14-thumb.jpg', alt='image')
+          a(href='img/gallery/gallery-15.jpg', data-lightbox='image-15', data-title='Sala de conferencia')
+            img(src='img/gallery/gallery-15-thumb.jpg', alt='image')
+          a(href='img/gallery/gallery-16.jpg', data-lightbox='image-16', data-title='Lavandaria')
+            img(src='img/gallery/gallery-16-thumb.jpg', alt='image')
+          a(href='img/gallery/gallery-17.jpg', data-lightbox='image-17', data-title='Camino')
+            img(src='img/gallery/gallery-17-thumb.jpg', alt='image')
+          a(href='img/gallery/gallery-18.jpg', data-lightbox='image-18', data-title='Biblioteca')
+            img(src='img/gallery/gallery-18-thumb.jpg', alt='image')
+          a(href='img/gallery/gallery-19.jpg', data-lightbox='image-19', data-title='Recepcion')
+            img(src='img/gallery/gallery-19-thumb.jpg', alt='image')
+          a(href='img/gallery/gallery-20.jpg', data-lightbox='image-20', data-title='Puertas')
+            img(src='img/gallery/gallery-20-thumb.jpg', alt='image')
+          a(href='img/gallery/gallery-21.jpg', data-lightbox='image-21', data-title='Recepcion')
+            img(src='img/gallery/gallery-21-thumb.jpg', alt='image')
+          a(href='img/gallery/gallery-22.jpg', data-lightbox='image-22', data-title='Cuarto estilo hotel')
+            img(src='img/gallery/gallery-22-thumb.jpg', alt='image')
+          a(href='img/gallery/gallery-23.jpg', data-lightbox='image-23', data-title='Salon de belleza')
+            img(src='img/gallery/gallery-23-thumb.jpg', alt='image')
+          a(href='img/gallery/gallery-24.jpg', data-lightbox='image-24', data-title='Sauna')
+            img(src='img/gallery/gallery-24-thumb.jpg', alt='image')
+          a(href='img/gallery/gallery-25.jpg', data-lightbox='image-25', data-title='Frente')
+            img(src='img/gallery/gallery-25-thumb.jpg', alt='image')
       .col-md-6
+        h3 UBICACIÓN
         .map
         .contactus-button
           a.button(href="/contactenos") CONTACTENOS
