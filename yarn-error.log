@@ -1,0 +1,28 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn add fancybox
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/opt/ImageMagick/bin:/Users/jaredmartin/.local/bin:./node_modules/.bin
+
+Yarn version: 
+  0.17.9
+
+Node version: 
+  6.6.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com registry.yarnpkg.com:443
+      at errnoException (dns.js:28:10)
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:76:26)
