@@ -14,14 +14,16 @@ html(lang='es')
   body
     nav.header
       .brand
-        .first BIENES RAICES
-        .second ALTAMIRA
+        img(src="img/brand@2x.png")
+        //- .first BIENES RAICES
+        //- .second ALTAMIRA
       .title LOMAS ALTAMIRA 33
     != yield
     footer
       .container
         .row
-          .col-md-3.brand Bienes Raices Altamira
+          .col-md-3.brand
+            img(src='img/footer-brand@2x.png')
           .col-md-9.contact 
             a(href="mailto:lomasaltamira33@gmail.com") lomasaltamira33@gmail.com 
             | | +503 7403 6266
